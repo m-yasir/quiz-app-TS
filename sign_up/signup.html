@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="index.html">QUIZAPP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="../login/login.html">
+                    <button type="button" class="sbtns btn btn-outline-primary" id='mainlogin'>Login</button>
+                </a>
+                <a href="../sign_up/signup.html">
+                    <button type="button" class="sbtns btn btn-outline-primary" id='mainsignup'>Sign Up</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mmain">
+        <div class="card bodycard log_sign">
+            <div class="card-body cardstyle">
+                <h5 class="card-title">Sign Up</h5>
+                <p class="cardpara">Please fill the form below to create your account for Quiz!</p>
+                <form id='signupform'>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="loginf">Email address</label>
+                        <input type="email" class="form-control" id="su_email" required aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                            <label for="exampleInputPassword1" class="loginf">Username</label>
+                            <input type="text" class="form-control" required id="su_username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="loginf">Password</label>
+                        <input type="password" class="form-control" required id="su_password1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="loginf">Confrim Password</label>
+                        <input type="password" class="form-control" id="su_password2" required placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-light bg-light footer_nav">
+            <p style="margin-left:86.2%;color:black;">Copyright &copy; Rights Reserved</p>
+        </nav>
+    </footer>
+
+    <script src="../resources/jquery-3.3.1.min.js"></script>
+    <script src="../resources/mat_popper.js"></script>
+    <script src="../resources/mat_bootstrap4.js"></script>
+    <script src="../main.js"></script>
+    <script src="signup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
+</body>
+
+</html>

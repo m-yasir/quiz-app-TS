@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="../index.html">QUIZAPP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="../login/login.html">
+                    <button type="button" class="sbtns btn btn-outline-primary" id='mainlogin'>Login</button>
+                </a>
+                <a href="../sign_up/signup.html">
+                    <button type="button" class="sbtns btn btn-outline-primary" id='mainsignup'>Sign Up</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="mmain">
+        <div class="card bodycard">
+            <div class="card-body mainstyle">
+                <h5 class='card-title'></h5>
+                <form id='insertans'>
+                </form>
+                <button id='nextquiz' type="button" class="btn btn-outline-secondary">Next</button>
+                <button id='qGoBack' type="button" class="btn btn-outline-secondary hide">Go Back</button>
+                <div class="timer_styling">
+                    <h5 style="font-size:1.5rem;font-weight:300;" id='timer-set'></h5>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <nav class="navbar navbar-light bg-light footer_nav">
+            <p style="margin-left:86.2%;color:black;">Copyright &copy; Rights Reserved</p>
+        </nav>
+    </footer>
+
+
+    <script src="../resources/jquery-3.3.1.min.js"></script>
+    <script src="../resources/mat_popper.js"></script>
+    <script src="../resources/mat_bootstrap4.js"></script>
+    <script src="../main.js"></script>
+    <script src="quizsession.js"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });
+    </script>
+</body>
+
+</html>

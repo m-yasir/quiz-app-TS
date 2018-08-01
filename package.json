@@ -1,0 +1,15 @@
+{
+    "name": "quiz_app",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "tsc": "tsc",
+        "watch": "tsc watch"
+    },
+    "private": false,
+    "dependencies": {
+        "bootstrap-material-design": "^4.1.1",
+        "@types/jquery": "^3.3.4",
+        "jquery": "^3.3.1"
+    }
+}
